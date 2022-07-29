@@ -1,0 +1,141 @@
+/* myDisney Palette picked from the background image
+CSS HEX */
+:root{
+
+--dark-slate-blue: #393E8F;
+--upsdell-red: #B12228;
+--crayolas-orange-yellow: #F3CC64;
+--medium-champagne:#FEECAE;
+--oxford-blue: #12194A;
+}
+
+/*
+Disney website 50th anniversary banner gradient colors
+linear-gradient(95deg, #5c5c8a 3%, #9a6e8d 35%, #bc865c 65%, #7f847b 85%, #5c5c8a 96%)
+*/
+
+body{
+    text-align: center;
+    font-family: 'Happy Monkey', cursive;
+    color: white;
+    margin: 0px;
+}
+#banner{
+    /*top section picture and titles*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://www.disneyfoodblog.com/wp-content/uploads/2020/12/2020-WDW-Entrance-Sign-Gateway-Construction-Painting-Completed-2.jpg"),linear-gradient(95deg, #5c5c8a 3%, #9a6e8d 35%, #bc865c 65%, #7f847b 85%, #5c5c8a 96%);
+
+}
+.title-bubble{
+    margin: 30px;
+    background: var(--dark-slate-blue);
+    padding: 4px 40px;
+    border-radius: 14px;
+}
+.subtitle-bubble{
+    margin: 100px 0 40px 0;
+    background: var(--crayolas-orange-yellow);
+    padding: 4px 12px;
+    border-radius: 14px;
+    width: 400px;
+}
+
+#activities-section{
+   /*middle section pictures of activities with descriptions*/
+    background: var(--medium-champagne);
+}
+#activities{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+/*keep same width as banner picture*/
+    width: 900px;
+    margin:auto;
+    padding: 60px 0px;
+    background: var(--medium-champagne);
+    color: var(--oxford-blue);
+}
+
+.activity{
+    /*each activity picture and description section*/
+    width: 200px;
+}
+.activity-img{
+    /*individual activity image designed to be in a round circle*/
+    border-radius: 50%;
+    width: 150px;
+}
+
+#yourguide{
+    /*bottom section 'card' introducing the author*/
+    padding: 60px 0px;
+    background-color: whitesmoke;
+}
+.guide-img{
+    /*the guide picture*/
+    width: 180px;
+    border-radius: 6px;
+    margin: 25px 15px 25px 0px;
+}
+.guideinfo{
+    /*the guide's info and descriptive text*/
+    display: flex;
+    flex-direction: column;
+}
+.guide-card{
+    width: 425px;
+    margin: 0px  auto;
+    padding: 15px;
+
+    display: flex;
+    justify-content: space-around;
+
+    background: var(--dark-slate-blue);
+    border-bottom: 10px solid var(--upsdell-red);
+    border-radius: 6px;
+}
+.guideinfo{
+    text-align: center;
+    width: 300px;
+}
+#fiftyth-section{
+    color:var(--oxford-blue);
+    background:whitesmoke;
+}
+.fiftythbanner{
+    background-image: linear-gradient(95deg, #5c5c8a 3%, #9a6e8d 35%, #bc865c 65%, #7f847b 85%, #5c5c8a 96%)    ;
+    height: 75px;
+}
+.fiftythbanner h1{
+    margin: auto 0px;
+    padding: 20px;
+    text-shadow: 0 0 3px white;
+}
+.fiftythtext{
+    width: 500px;
+    margin: auto;
+}
+
+#discover-img{
+    background: url("images/before-castle.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 745px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    width: 555px;
+    border: 3px dashed var(--dark-slate-blue);
+}
+#discover-img:hover{
+    background: url("images/after-castle.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 745px;
+}
