@@ -7,7 +7,8 @@ The requirements were:
 - Use Flexbox
 - Use a background image
 - Use a color palette
-Follow the UX design guide on Figma
+- Follow the UX design guide on Figma
+
 Stretch goals:
 - make the content about your own 'hometown'
 - add a Google font
